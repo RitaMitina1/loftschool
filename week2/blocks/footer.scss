@@ -1,0 +1,34 @@
+.footer{
+  position: relative;
+  background-image: url("../img/contacts/footer.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.footer__container{
+  display: flex;
+  width: 50%;
+}
+
+.footer__contacts{
+  display: flex;
+  flex-direction: column;
+
+}
+
+.contacts__phone{
+  font-family: 'Ubuntu-Bold';
+  color: #d64c26;
+}
+
+.footer__social{
+//   $icon: (vk,fb,inst,twitter);
+// @each $image in $icon {
+//   .footer__social--#{$image} {
+//     background: url("../svg/#{$image}.svg");
+//     border: 1px solid red;
+//   }
+//   }
+}
+
+  

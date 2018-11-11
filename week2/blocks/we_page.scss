@@ -1,0 +1,51 @@
+.we__page{
+  background-image: url(../img/we/bg.png);
+  background-repeat: no-repeat;
+background-position: center center;
+// height: 100%;
+// width: 100%;
+background-size: cover;
+}
+
+// .we__page__caption h1{
+//   font-family: 'Gagalin-Regular';
+//   font-size: 72px;
+//   text-align: center;
+//   padding-top:134px;
+//   margin-bottom: 55px;
+
+// }
+.we__page__description{
+  display: flex;
+  justify-content: center;
+
+}
+.we__page__block{
+  width:33.3% ;
+  // height:16.2rem ;
+  text-align: center;
+}
+
+.paragraph{
+  font-family: 'Ubuntu-Light';
+  font-size: 14px;
+  color:#949292;
+  // font-weight:700;
+  line-height:1.5;
+}
+.title--black{
+  padding-top: 85px;
+  margin-bottom: 55px;
+  color:black;
+  text-align: center;
+}
+.text--black{
+  // font-family: 'Lifehack-Medium';
+  font-size: 24px;
+ margin: 22px 0 20px 0;
+  color:black;
+}
+.me-icon{
+  height: 90px;
+  width: 100px;
+}
