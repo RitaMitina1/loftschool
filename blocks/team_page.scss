@@ -1,0 +1,70 @@
+
+
+.team__page{
+  position: relative;
+  background-image: url(../img/team/main_pic.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.team__block{
+  position: absolute;
+  width: 50%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(#2d3032, .9);
+}
+.wrapper__team__block{
+  margin:6.9rem 6rem auto 6rem ;
+}
+
+.photo{
+  border-radius: 50%;
+  padding: .8rem 1.2rem;
+}
+ .accordeon__info{
+    display: flex;
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+    font-family: 'Ubuntu-Light';
+    & span{
+      font-family: 'Ubuntu-Bold';
+    }
+  }
+  .accordeon__position{
+    margin-top: 1rem;
+  }
+.accordeon__item{
+  position: relative;
+  margin-top: 35px;
+  list-style: none;
+  color:#fff;
+    &:before{
+      content: "";
+      position: absolute; 
+      top: 8px;
+      border: 5px solid transparent;
+      border-top: 5px solid #f9b43b; 
+      }
+    }
+    .accordeon__item--active{
+          
+            &:before{
+              transform: rotate(-180deg);
+              top:0;
+              }
+            &.accordeon__info{
+              height: 100%;
+              visibility: visible;
+              opacity: 1;
+              overflow: hidden;
+            }
+        }
+
+ 
+.accordeon__name {
+  font-size: 14px;
+  padding-left: 15px;
+}

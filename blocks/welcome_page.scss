@@ -1,0 +1,94 @@
+.welcome__page{
+  background-image: url(../img/container/Rectangle.png);
+  background-repeat: no-repeat;
+background-position: center center;
+// height: 100%;
+// width: 100%;
+background-size: cover;
+}
+
+.hf__container{
+   display: flex; 
+   padding-top:0.7rem;
+  justify-content: space-between;
+  flex-direction: row;
+  // align-items: center;
+}
+.logo{
+  height:75px ;
+  width: 90px;
+}
+  .wrapper__welcome__page{
+   padding-left: 1.6rem;
+   flex: .8;
+  display: flex;
+  align-items: center;
+    // align-items: center;
+   }  
+.header__buttons{
+  display: flex; 
+  align-items: center;
+}
+  .menu__list{
+    display: flex;
+    flex-direction: row;
+    
+  }
+
+  .menu__item{
+    font-family: 'Ubuntu-Medium';
+  list-style-type: disc;
+    text-transform: uppercase;
+    color:#fff;
+    font-size:13px;
+    margin:  0  1rem;
+    a{
+      color:#fff;
+    }
+    &:first-child {
+      list-style-type: none;
+      }
+    
+  }
+
+  .order__button{
+    background-color:#e45028;
+    color:white;
+    // margin-left: 15px;
+    padding: .7rem 1rem; 
+    text-transform: uppercase;
+    font-family: 'Ubuntu-Medium';
+    font-size:12px;
+    border:0;
+    border-radius: 5px;
+  
+    &:hover{
+      cursor: pointer;
+    }
+
+  }
+
+.container__bpic{
+  max-width: 50%;
+}
+
+   .welcome__page__text{
+     width: 50%;
+     margin-top: 7.5rem;
+     margin-left: .3rem;
+   }
+       .text{
+         
+         align-items: flex-start;
+         font-size: 65px;
+         font-family: 'Lifehack-Medium';
+         color:#fff;
+       
+   }
+   
+   .title{
+     font-size: 72px;
+     font-family: 'Gagalin-Regular';
+    //  margin-bottom: 27px;
+     color: #f9b43b;
+   }
