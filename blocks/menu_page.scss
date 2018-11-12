@@ -64,6 +64,10 @@
     padding: 62px 35px;
     visibility: visible;
     opacity: 1;
+    @include phones {
+      padding:2rem 0 ;
+     }
+   
   }
   }
    
