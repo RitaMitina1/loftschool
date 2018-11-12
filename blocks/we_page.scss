@@ -18,14 +18,27 @@ background-size: cover;
 .we__page__description{
   display: flex;
   justify-content: center;
-
+  @include phones{
+flex-direction: column;
+  }
 }
 .we__page__block{
   width:33.3% ;
   // height:16.2rem ;
   text-align: center;
+  @include phones{
+    width: 100%;
+    display: flex;
+    text-align: start;
+      }
 }
-
+.we__page__image{
+  @include phones{
+    margin-right: 2rem;
+    margin-top: 2rem;
+  
+  }
+}
 .paragraph{
   font-family: 'Ubuntu-Light';
   font-size: 14px;
@@ -38,14 +51,23 @@ background-size: cover;
   margin-bottom: 55px;
   color:black;
   text-align: center;
+   @include phones{
+    margin-bottom: 0;
+      }
 }
 .text--black{
   // font-family: 'Lifehack-Medium';
   font-size: 24px;
  margin: 22px 0 20px 0;
   color:black;
+  @include phones{
+   white-space: nowrap;
+      }
+ 
 }
 .me-icon{
   height: 90px;
   width: 100px;
+
+
 }

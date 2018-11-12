@@ -1,8 +1,8 @@
 $().ready(function(){
 
-  let activeClass = "menu__item--active";
+  let activeClass = "team__item--active";
 
-  let btn = $('.menu__list__title');
+  let btn = $('.team__item__title');
 
   btn.click(function(event){
     event.preventDefault();
@@ -15,6 +15,8 @@ $().ready(function(){
     }else{
       btn.parent().removeClass(activeClass);
       parent.addClass(activeClass);
+    
     }
+     
   });
 });

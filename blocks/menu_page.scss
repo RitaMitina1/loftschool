@@ -10,10 +10,10 @@
   padding-left: 0;
  padding-top: 2rem;
 }
-.accordeon__list__title{
+.menu__list__title{
   font-family: 'Gagalin-Regular';
   position: relative;
-  
+  width: 4rem;
   line-height: 1.714;
   color: #fff;
   cursor: pointer;
@@ -25,14 +25,12 @@
     left: 0;
     bottom: 0;
     right: 0;
-    transform: rotateZ(-90deg);
+    transform: rotate(-90deg);
     transform-origin: 0 0;
   }
 
 }
-.accordeon__width{
-    width: 4rem;
-  }
+
 .menu__page__list {
   position: absolute;
   right: 0;
@@ -47,21 +45,22 @@
 .menu__list__content {
   font-size: 14px;
   max-width: 0px;
-  background: rgba(#2d3032, .9);
+  background: rgba(#2d3032, .7);
   opacity: 0;
-  transition: 1s;
+  transition: .2s;
   overflow: hidden;
 }
 .menu__list__item {
   display: flex;
+  
   }
-  .accordeon__item--active {
-  & .accordeon__list__title{
+  .menu__item--active {
+  & .menu__list__title{
       color: #f9b43b;
     }
 
-  & .menu-list__content {
-    width: rem(540);
+  & .menu__list__content {
+    max-width: 33.7rem;
     padding: 62px 35px;
     visibility: visible;
     opacity: 1;

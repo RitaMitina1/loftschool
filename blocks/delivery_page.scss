@@ -9,11 +9,29 @@
 .title--form{
   padding-top: 8.4rem;
   margin-bottom: 3rem;
+  max-width: 100%;
   text-align: center;
+
+  @include tablets{
+    white-space: nowrap;
+    }
+
+    @include phones{
+      white-space: wrap;
+      }
+
 }
 .form__content{
   display: flex;
-  
+  @include tablets{
+  flex-direction: column;
+  width: 80%;
+  margin-left: 5%;
+  align-content: center;
+  }
+  @include phones{
+    flex-direction: column;
+  }
 }
 .form__block--title {
   color: #fff;
@@ -21,6 +39,9 @@
 .form__row{
   display: flex;
   margin-bottom: 1.2rem;
+  &.form__row--comments{
+  flex-direction: column;
+}
    
 }
 
@@ -30,31 +51,73 @@
   width: 100%;
   border-radius: 4px;
   background: #fff;
+  
 }
-.form__user{
+.form__user {
   width: 50%;
   margin-right: 1.2rem;
+  @include tablets{
+    width: 100%;
+    }
+    @include phones{
+    width: 100%;
+    }
 }
 
 .form__block {
   flex: 1;
+  margin-right: 1.25rem;
   &:last-child {
     margin-right: 0;
   }
+
+  @include tablets{
+    width: 100%;
+    margin-right: 3rem;
+    }
+    @include phones{
+    width: 100%;
+    }
 }
+
 .form__comments{
   display: flex;
  flex-direction: column;  
  width: 55%;
+ @include tablets{
+  width: 100%;
+  }
+  @include phones{
+  width: 100%;
+  }
 }
 
 .form-input--comments{
-height: 85%;
+  height: 6rem;
+}
+.form__block--title{
+  margin-bottom: .3rem;
+}
+.form__block--button{
+  margin: 1rem 1rem 1rem 0;
+  & .form-rb{
+    display: none;
+  }
+  & .form-chb{
+    display: none;
+  }
+}
+.form__buttons--rdb{
+  display: flex;
+  // float: left;
 }
 
-.form__buttons{
-  // position: absolute;
-  // display: flex;
+.clear__button{
+  background: none;
+  border: 0;
+  padding: 0;
+  padding-left: 1rem;
+  color: #FFF;
+  cursor: pointer;
 }
-.form-rb{
-}
+
