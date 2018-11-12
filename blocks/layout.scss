@@ -83,8 +83,45 @@ width: 95%;
   display: flex; 
  justify-content: space-between;
  flex-direction: row;
+ padding-top: 1rem;
+}
 
+.hamburger{
+  width: 30px;
+  height: 5px;
+  background: #fff;
+  border-radius: 3px;
+  position: relative;
+  margin-top: 20px;
+margin-bottom: 20px;
+display: none;
 
+@include tablets{
+ display: block;
+ margin: 2rem;
+}
+@include phones{
+  display: block;
+  margin: 2rem;
+ }
+}
 
- // align-items: center;
+.hamburger:after, .hamburger:before{
+content: "";
+display: block;
+width: 100%;
+height: 5px;
+background: #fff;
+border-radius: 3px;
+position: absolute;
+}
+
+.hamburger:after{
+  top:100%;
+  margin-top:5px;
+}
+
+.hamburger:before{
+  bottom:100%;
+  margin-bottom:5px;
 }

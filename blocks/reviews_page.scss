@@ -44,7 +44,6 @@
   padding: .2rem 0;
 }
 }
-
 .paragraph--invisible{
   @include phones{
     display: none;
@@ -70,10 +69,7 @@ position: relative;
     transform: scale(1);
   }
  }
-
-
 }
-
   .order__button--reviews{
     background-color: #2f3234;
   }
