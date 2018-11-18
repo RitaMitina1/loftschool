@@ -1,8 +1,8 @@
 $().ready(function(){
 
-  let activeClass = "menu__item--active";
+  let activeClass = "accordeon__item--active";
 
-  let btn = $('.menu__list__title');
+  let btn = $('.accordeon__list__title');
 
   btn.click(function(event){
     event.preventDefault();

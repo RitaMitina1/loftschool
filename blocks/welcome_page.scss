@@ -7,42 +7,31 @@ background-position: center center;
 background-size: cover;
 }
 
-
+.hf__container{
+   display: flex; 
+   padding-top:0.7rem;
+  justify-content: space-between;
+  flex-direction: row;
+  // align-items: center;
+}
 .logo{
-  height:4.6rem ;
-  width: 5.6rem;
+  height:75px ;
+  width: 90px;
 }
   .wrapper__welcome__page{
    padding-left: 1.6rem;
-  // 
+   flex: .8;
   display: flex;
   align-items: center;
     // align-items: center;
-
-    @include tablets {
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-    }
-
-    @include phones{
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-      // padding: 0 20%;
-    }
    }  
 .header__buttons{
   display: flex; 
   align-items: center;
-  margin-left: auto;
 }
   .menu__list{
     display: flex;
     flex-direction: row;
-    @include tablets {
-      display: none;
-    }
     
   }
 
@@ -79,75 +68,27 @@ background-size: cover;
 
   }
 
-.burger{
-  max-width: 100%;
-  @include tablets{
-    margin-top: 0;
-    width: 70%;
-    margin-bottom: 1rem;
-  }
-  @include phones{
-    margin-top: 0;
-    width: 70%;
-    margin-bottom: 1.7rem;
-  }
+.container__bpic{
+  max-width: 50%;
 }
 
    .welcome__page__text{
      width: 50%;
-    text-align: center;
      margin-top: 7.5rem;
      margin-left: .3rem;
-
-
-     @include tablets{
-       margin-top: 0;
-       width: 70%;
-     
-     }
-
-     @include phones{
-      margin-top: 0;   
-      width: 100%;
-    }
    }
-
-
        .text{
          
-        //  align-items: flex-start;
+         align-items: flex-start;
          font-size: 65px;
          font-family: 'Lifehack-Medium';
          color:#fff;
-         @include tablets{
-          // margin-top: 0;
-          font-size: 60px;
-        }
-    
-        @include phones{
-         margin-top: 0;  
-        //  white-space: nowrap;
-         font-size: 60px;
-    
-       }
-        
+       
    }
    
    .title{
      font-size: 72px;
      font-family: 'Gagalin-Regular';
-   
-      color: #f9b43b;
-     @include tablets{
-      margin-top: 0;
-      font-size: 60px;
-    }
-
-    @include phones{
-     margin-top: 0;  
-     font-size: 60px;
-
-   }
     //  margin-bottom: 27px;
-    
+     color: #f9b43b;
    }

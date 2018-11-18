@@ -1,15 +1,11 @@
 
 
-$phones:  480px;
-$tablets: 768px;
+
 @import "../fonts/fonts.css";
 @import "normalize.css";
-
-@import "media.scss";
-
+@import "base.css";
 
 
-@import "layout.scss";
 @import "welcome_page.scss";
 @import "we_page.scss";
 @import "reviews_page.scss";
@@ -19,8 +15,8 @@ $tablets: 768px;
 @import "svg.scss";
 @import "menu_page.scss";
 @import "delivery_page.scss";
-@import "map_page.scss";
-@import "footer.scss";
+@import "contacts_page.scss";
+@import "footer.scss"
 
 
 

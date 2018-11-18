@@ -4,14 +4,6 @@
     right: 150px;
     z-index: 100;
     color:white;
-
-    @include tablets {
-      display: none;
-    }
-
-    @include phones{
-      display: none;
-    }
   }
   
   .pagination__item--active:before{
