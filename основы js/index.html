@@ -1,0 +1,54 @@
+  <!DOCTYPE html>
+  <html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Задания JS</title>
+  </head>
+  <body> 
+    
+    <!-- Задание 1. -->
+   <div id = "first_task">
+    </div>
+   <script type="text/javascript">
+   const first_element = document.createElement('div');
+   const first_task = document.querySelector('#first_task');
+   first_task.appendChild(first_element);
+   first_element.textContent = 'Этот элемент создан при помощи DOM API';
+
+    // Задание 2.
+     const second_element = document.createElement('div');
+    second_element.className = "inner";
+    second_element.textContent = 'Этот элемент тоже создан при помощи DOM API';
+    first_task.appendChild(second_element);
+
+    // Задание 3.
+    second_element.style.color = 'red';
+
+    // Задание 4.
+    first_element.addEventListener('click', function() {
+      console.log('Этот текст говорит о том, что я всё сделал правильно');
+    });
+
+    // Задание 5.
+
+    const a_element = document.createElement('a');
+    a_element.href = 'https://loftschool.com';
+    a_element.textContent = 'Ссылка';
+    first_task.appendChild(a_element);
+
+
+    a_element.addEventListener('click', function(event) {
+      event.preventDefault();
+      console.log('Я кликнул на ссылку', a_element.href);
+    });
+
+    // Задание 6.
+
+
+
+   </script>
+
+  </body>
+  </html>
