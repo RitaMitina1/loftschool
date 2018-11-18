@@ -46,13 +46,38 @@
 
 .burger{
   display: flex;
+    
+@include tablets{
+  flex-direction: column;
+}
+@include phones{
+  flex-direction: column;
+  width: 30rem;
+}
 }
 .burger__left{
   width: 50%;
+  @include tablets{
+    width: 90%;
+    display: -webkit-box;
+    // display: flex;
+  }
+  @include phones{
+    width: 90%;
+    display: -webkit-box;
+  }
 }
 
 .burger__right{
   width: 50%;
+  @include tablets{
+    width: 100%;
+    text-align: center;
+  }
+  @include phones{
+    width: 100%;
+    text-align: center;
+  }
 }
 
 .burger__image{
@@ -81,6 +106,13 @@
   margin-right: 30px;
   & span{
     font-size: 30px;
+  }
+
+  @include tablets{
+ white-space: nowrap;
+  }
+  @include phones{
+    white-space: nowrap;
   }
 }
 .consist:hover .consist__dropdown__menu{
@@ -119,6 +151,8 @@
   margin-top: 1.2rem;
   padding-right: 1rem;
   width: 100%;
+
+
   & .dropdown__name{
     font-family: 'Ubuntu-Medium';
   }
@@ -131,12 +165,13 @@
 .dropdown__icons{
   max-height: 45px;
   max-width: 45px ;
-  margin: .5rem;
+  margin-top: .3rem;
 
 }
 
 .burger__weight{
   position: absolute;
+
 }
 
 
