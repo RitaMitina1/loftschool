@@ -11,10 +11,11 @@ $().ready(function(){
     var parent = $(this).parent();
 
     if (parent.hasClass(activeClass)){
-      parent.remove(activeClass)
+      btn.parent().removeClass(activeClass);
     }else{
       btn.parent().removeClass(activeClass);
       parent.addClass(activeClass);
     }
   });
+
 });

@@ -14,7 +14,7 @@
     }
   }
   
-  .pagination__item--active:before{
+  .pagination__item:hover:before{
     content:"";
     display: block;
     position: absolute;
@@ -23,5 +23,5 @@
     width: 11px;
     border-radius: 100px;
     transform: translate(-155%,-115%);
-  
+    cursor: pointer;
     }

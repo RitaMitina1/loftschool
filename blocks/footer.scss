@@ -68,11 +68,15 @@ justify-content: flex-end;
 
 .social__icon {
   margin-left: 1.25rem;
-  width: 1.4375rem;
-  height: 0.8125rem;
+  max-width: 1.4375rem;
+  max-height: 0.8125rem;
   // opacity: 0.3;
-  & :hover{
-    color: #fff;
+ 
+}
+
+.social_link{
+   & :hover{
+    fill: #fff;
   }
 }
 .social__item{

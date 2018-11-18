@@ -36,7 +36,7 @@ flex-direction: column;
 }
 .we__page__image{
   @include phones{
-    margin-right:1.5rem;
+    margin-right:.5rem;
     margin-top: 2rem;
   
   }
@@ -70,8 +70,8 @@ flex-direction: column;
  
 }
 .me-icon{
-  height: 100px;
-  width: 100px;
+  height: 90px;
+  width: 90px;
 
 
 }
