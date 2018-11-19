@@ -13,7 +13,6 @@ background-size: cover;
   width: 5.6rem;
 }
   .wrapper__welcome__page{
-   padding-left: 1.6rem;
   // 
   display: flex;
   align-items: center;
@@ -79,17 +78,26 @@ background-size: cover;
 
   }
 
+  .container__bpic{
+    @include phones{
+      //  margin-top: -3rem;
+    }
+
+  }
+
 .burger{
   max-width: 100%;
   @include tablets{
     margin-top: 0;
     width: 70%;
     margin-bottom: 1rem;
+    margin: 0 auto;
   }
   @include phones{
     margin-top: 0;
     width: 70%;
     margin-bottom: 1.7rem;
+    margin: 0 auto;
   }
 }
 

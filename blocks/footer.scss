@@ -19,7 +19,6 @@
   display: flex;
   @include phones{
     flex-direction: column;
-    padding-left: 3rem;
     // justify-content: center;
     }
 }
@@ -42,6 +41,12 @@
 .contacts__right{
   width: 50%;
   padding-top: 1.5rem;
+  @include phones{
+   width: 100%;
+   display: flex;
+    justify-content: center;
+    // justify-content: center;
+    }
  }
 .phone-icon{
   width: .7rem;
@@ -70,6 +75,7 @@ justify-content: flex-end;
   margin-left: 1.25rem;
   max-width: 1.4375rem;
   max-height: 0.8125rem;
+ fill: #5a5a5a;
   // opacity: 0.3;
  
 }

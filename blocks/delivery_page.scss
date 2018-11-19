@@ -82,9 +82,6 @@
     @include phones{
     width: 100%;
     
-  &:last-child {
-    display: none;
-  }
     }
 }
 
