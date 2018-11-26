@@ -287,25 +287,15 @@ footer {
 .scroll--slider--left {
   -webkit-transform: rotate(90deg);
   -ms-transform: rotate(90deg);
-  transform: rotate(90deg); }
-  @media (max-width: 768px) {
-    .scroll--slider--left {
-      left: 5rem; } }
-  @media (max-width: 480px) {
-    .scroll--slider--left {
-      left: 15%; } }
+  transform: rotate(90deg);
+  left: 15%; }
 
 .scroll--slider--right {
   -webkit-transform: rotate(-90deg);
   -ms-transform: rotate(-90deg);
   transform: rotate(-90deg);
-  margin-top: 1.9rem; }
-  @media (max-width: 768px) {
-    .scroll--slider--right {
-      right: 5rem; } }
-  @media (max-width: 480px) {
-    .scroll--slider--right {
-      right: 4rem; } }
+  margin-top: 1.9rem;
+  right: 15%; }
 
 .hamburger {
   cursor: pointer;
