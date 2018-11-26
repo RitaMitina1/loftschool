@@ -163,10 +163,21 @@ background-size: cover;
 
 
    .arrow__scroll{
-    //  text-align: center;
+     text-align: center;
+     position: relative;
      padding-top: 3rem;
-     top:50%;
-     position: absolute;
+     z-index: 10;
+    //  top:50%;
+  
+        @include tablets{
+    position: absolute;
+    left: 50%;
+    }
+
+    @include phones{
+   position: absolute;
+   left: 47%;
+   }
    }
    .scroll{
      cursor: pointer;
@@ -177,18 +188,25 @@ background-size: cover;
    }
    .scroll--slider--left{
     transform: rotate(90deg);
-    left: 15%;
+    // left: 15%;
+    @include tablets{
+      left:15%;
+    }
+
+    @include phones{
+      left:15%;
+   }
 
    }
    .scroll--slider--right{
     transform: rotate(-90deg);
     margin-top: 1.9rem;
-    right: 15%;
-  //   @include tablets{
-  //     right:15%;
-  //   }
+    // right: 15%;
+    @include tablets{
+      right:-20%;
+    }
 
-  //   @include phones{
-  //     right:4rem;
-  //  }
+    @include phones{
+      right:-20%;
+   }
    }

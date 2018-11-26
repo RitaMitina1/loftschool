@@ -49,7 +49,6 @@
       margin: 0 auto;
     }
     @include phones{
-      width: 70%;
       margin: 0 auto;
 
      margin-top: 2rem;
@@ -92,7 +91,7 @@
   width: 28rem;
   height: 19.68rem;
   @include phones{
-    height: 16rem;
+    height: 18rem;
   }
 }
 
