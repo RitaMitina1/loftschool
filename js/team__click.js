@@ -7,7 +7,6 @@ $().ready(function(){
   btn.click(function(event){
     event.preventDefault();
 
-
     var parent = $(this).parent();
 
     if (parent.hasClass(activeClass)){

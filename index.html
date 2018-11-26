@@ -16,45 +16,47 @@
     <script src="js/team__click.js"></script>
     <script src="js/slider.js"></script>
     <script src="js/hamburger.js"></script>
+    <script src="js/overlay.js"></script>
+    <script src="js/send.js"></script>
 
 </head>
   <body>
       <div class="wrapper">
+        <a name="welcome__page"></a>
       <section class="welcome__page">
         <header class="header">
           <div class="container hf__container">
               <div class="header__logo">
-               <a href="#"> <svg class="logo">
+               <a href="#welcome__page"> <svg class="logo">
                   <use xlink:href="svg/sprite.svg#logo"> </use>
                 </svg></a> 
-                 <!-- <img src="header/logo.png" alt="" class="logo"> -->
               </div>
 
               <div class="header__buttons">
                 <nav class="menu ">
                   <ul class="menu__list">
                   <li class="menu__item ">
-                    <a href="#" class="  menu__link">
+                    <a href="#we__page" class="  menu__link">
                        <span class="menu__text">О нас</span> 
                     </a>
                   </li>
                   <li class="menu__item">
-                     <a href="#" class="menu__link"> 
+                     <a href="#burger__page" class="menu__link"> 
                        <span class="menu__text">Бургеры</span>   
                      </a>
                    </li>
                    <li class="menu__item">
-                      <a href="#" class="menu__link">
+                      <a href="#team__page" class="menu__link">
                        <span class="menu__text">Команда</span>
                       </a>
                    </li>
                     <li class="menu__item ">
-                      <a href="#" class="  menu__link">
+                      <a href="#menu__page" class="menu__link">
                          <span class="menu__text">Меню</span> 
                       </a>
                     </li>
                     <li class="menu__item">
-                       <a href="#" class="menu__link"> 
+                       <a href="#reviews__page" class="menu__link"> 
                          <span class="menu__text">Отзывы</span>   
                        </a>
                      </li>
@@ -84,32 +86,32 @@
           <div class="container">
             <div class="wrapper__welcome__page">
               
-                <div class="hamburger__active">
+                <div class="hamburger__active" id="hamburger__active">
                    
                   <nav class="hamburger__menu ">
                     <ul class="hamburger__list">
                     <li class="hamburger__item ">
-                      <a href="#" class=" hamburger__link">
+                      <a href="#we__page" class=" hamburger__link">
                          <span class="hamburger__text">О нас</span> 
                       </a>
                     </li>
                     <li class="hamburger__item">
-                       <a href="#" class="hamburger__link"> 
+                       <a href="#burger__page" class="hamburger__link"> 
                          <span class="hamburger__text">Бургеры</span>   
                        </a>
                      </li>
                      <li class="hamburger__item">
-                        <a href="#" class="hamburger__link">
+                        <a href="#team__page" class="hamburger__link">
                          <span class="hamburger__text">Команда</span>
                         </a>
                      </li>
                       <li class="hamburger__item ">
-                        <a href="#" class="  hamburger__link">
+                        <a href="#menu__page" class="  hamburger__link">
                            <span class="hamburger__text">Меню</span> 
                         </a>
                       </li>
                       <li class="hamburger__item">
-                         <a href="#" class="hamburger__link"> 
+                         <a href="#reviews__page" class="hamburger__link"> 
                            <span class="hamburger__text">Отзывы</span>   
                          </a>
                        </li>
@@ -144,7 +146,8 @@
      
         
       </section>
-          <section class="we__page">
+      <a name="we__page"></a>
+          <section class="we__page" >
               <div class="container">
             <div class="we__title">
               <h1 class="title title--black"> Мы лучшие</h1>
@@ -200,14 +203,14 @@
             </div>
           <!-- </div> -->
           </section>
-
+          <a name="burger__page"></a>
           <section class="dark__burger__page">
             <div class="container container--burger__page">
        
                 <div class="content">
 
-                    <div class="arrow__scroll scroll--slider--left" id="left">
-                        <svg class="scroll">
+                    <div class="arrow__scroll scroll--slider--left">
+                        <svg class="scroll"  id="left">
                           <use xlink:href="svg/test.svg#arrow-scroll"> </use>
                         </svg>
                        </div>
@@ -324,9 +327,9 @@
                                         <div class="burger__right">
                                         <div class="burger__text">
                                         <div class="burger__title">
-                                          <h1 class="title title--white">dark beef burger</h1>
+                                         dark beef burger
                                         </div>
-                                        <div class="paragraph paragraph--white">Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками нежнейшего сыра эмменталь, двумя помидорами, луком, салатом и соусом гриль теперь с добавлением экзотического соуса чураско.</div>
+                                        <div class="burger__desc">Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками нежнейшего сыра эмменталь, двумя помидорами, луком, салатом и соусом гриль теперь с добавлением экзотического соуса чураско.</div>
                                         <div class="burger__order">
                                         <div class="burger__cost">
                                           <h2 class="title title--cost"> 500 <span>рублей</span></h2>
@@ -341,8 +344,8 @@
                           </div> 
                         </div>
                        </div>
-              <div class="arrow__scroll scroll--slider--right" id="right">
-                  <svg class="scroll">
+              <div class="arrow__scroll scroll--slider--right" >
+                  <svg class="scroll" id="right">
                     <use xlink:href="svg/test.svg#arrow-scroll"> </use>
                   </svg>
                  </div>
@@ -352,7 +355,7 @@
           </section>
 
 
-
+          <a name="team__page"></a>
           <section class="team__page">
             <div class="container">
                   <div class="team__block">
@@ -424,7 +427,7 @@
             </div>
           </div>
           </section>
-         
+                  <a name="menu__page"></a>
                    <section class="menu__page">
                         <div class="container">
                         <div class="title title--menu"><span>Меню</span></div>
@@ -433,7 +436,7 @@
                             <div class="menu__list__title ">  <span>Для мясоедов</span> </div> 
                             
                               <div class="menu__list__content">
-                                <p class="paragraph paragraph--white">  Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует
+                                  Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует
                                   конструктивный
                                   механизм сочленений. Лирический субъект начинает диссонансный анжамбеман. Наш современник стал особенно
                                   чутко относиться к слову, однако механизм сочленений неустойчив. Модальность высказывания, как
@@ -442,20 +445,20 @@
                                   Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует
                                   конструктивный
                                   механизм сочленений. Лирический субъект начинает диссонансный анжамбеман. Наш современник стал особенно
-                                  чутко относиться к слову.</p>
+                                  чутко относиться к слову.
                               </div>
                           </li>
                           <li class="menu__list__item " style="background: url(img/menu/vegetarians.png) center center/ cover no-repeat;">
                             <!-- <div class="accordeon__list__title accordeon__width"> <span>Вегетерианское</span></div> -->
                             <div class="menu__list__title"> <span>Вегетерианское</span></div>
                             <div class="menu__list__content">
-                             <p  class="paragraph paragraph--white"> Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный
+                              Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный
                               механизм сочленений. Лирический субъект начинает диссонансный анжамбеман. Наш современник стал особенно
                               чутко относиться к слову, однако механизм сочленений неустойчив. Модальность высказывания, как справедливо
                               считает И.Гальперин, пространственно выбирает метр.
                               Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный
                               механизм сочленений. Лирический субъект начинает диссонансный анжамбеман. Наш современник стал особенно
-                              чутко относиться к слову. </p>
+                              чутко относиться к слову. 
                             </div>
                           </li>
                           <li class="menu__list__item " style="background: url(img/menu/diet.png) center center/ cover no-repeat;">
@@ -463,49 +466,77 @@
                        
                               
                             <div class="menu__list__content">
-                            <p  class="paragraph paragraph--white">  Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный
+                              Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный
                               механизм сочленений. Лирический субъект начинает диссонансный анжамбеман. Наш современник стал особенно
                               чутко относиться к слову, однако механизм сочленений неустойчив. Модальность высказывания, как справедливо
                               считает И.Гальперин, пространственно выбирает метр.
                               Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный
                               механизм сочленений. Лирический субъект начинает диссонансный анжамбеман. Наш современник стал особенно
-                              чутко относиться к слову.</p>
+                              чутко относиться к слову.
                             </div>
                           </li>
                         </ul>
                       </div>
                   </section>
-          
+          <a name="reviews__page"></a>
             <section class="reviews__page">
               <div class="wrapper__reviews__page">
                 
               <div class="reviews__photo__block" style="background-image:url('./img/reviews/one.png')"> 
-                <div class="reviews__hover__block">
-                  <div class="reviews__text__name">
-                      <h5 class="title reviews__title"> Константин Спилберг</h5>
+                <div class="overlay">
+                    <div class="overlay__wrap">
+                      <div class="overlay__scoreboard">
+                          <div class="overlay__text">
+                              <!-- <span class="overlay__name">  </span>
+                              <p class="overlay__comments"></p> -->
+                            </div>
+                        <div class="overlay__button">
+                        <div class="overlay__close"> </div>
+                      </div>
+                      </div>
                     </div>
-                    <div class="paragraph paragraph--white paragraph--invisible">
-                      <p>Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.
-                      </p>
+                  </div>
+                <div class="reviews__hover__block">
+                  <div class="reviews__text__name"  id="reviews__name">
+                      Мария Антонова
+                    </div>
+                    <div class="paragraph paragraph--white paragraph--invisible" id="reviews__text">
+                      Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... 
+                        Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.
+                      
                     </div>
                   
               
-                    <div class="reviews__btn">
+                    <div class="reviews__btn" id = "reviews__button">
                         <button  type="button" class="order__button order__button--reviews"> Подробнее  </button>  
                       </div>
                 </div>
               </div>
        
               <div class="reviews__photo__block" style="background-image:url('./img/reviews/two.png') ">
+                <div class="overlay">
+                    <div class="overlay__wrap">
+                      <div class="overlay__scoreboard">
+                          <div class="overlay__text">
+                              <!-- <span class="overlay__name">  </span>
+                              <p class="overlay__comments"></p> -->
+                            </div>
+                        <div class="overlay__button">
+                        <div class="overlay__close"> </div>
+                      </div>
+                      </div>
+                    </div>
+                  </div>
                 <div class="reviews__hover__block">
-                  <div class="reviews__text__name">
-                    <h5 class="title reviews__title"> Константин Спилберг</h5>
+                  <div class="reviews__text__name"  id="reviews__name">
+                    Константин Спилберг
                   </div>
-                  <div class="paragraph paragraph--white paragraph--invisible">
-                    <P>Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.
-                    </p>
+                  <div class="paragraph paragraph--white paragraph--invisible" id="reviews__text">
+                    Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть...
+                       Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.
+                    
                   </div>
-                  <div class="reviews__btn">
+                  <div class="reviews__btn" >
                       <button  type="button" class="order__button order__button--reviews"> Подробнее  </button>  
                     </div>
                 
@@ -513,13 +544,25 @@
               </div>
 
               <div class="reviews__photo__block" style="background-image:url('./img/reviews/three.png')  ">
-                  <div class="reviews__hover__block">
-                  <div class="reviews__text__name">
-                      <h5 class="title reviews__title"> Константин Спилберг</h5>
+                <div class="overlay">
+                    <div class="overlay__wrap">
+                      <div class="overlay__scoreboard">
+                          <div class="overlay__text">
+                              <!-- <span class="overlay__name">  </span>
+                              <p class="overlay__comments"></p> -->
+                            </div>
+                        <div class="overlay__button">
+                        <div class="overlay__close"> </div>
+                      </div>
+                      </div>
+                    </div>
                   </div>
-                  <div class="paragraph paragraph--white paragraph--invisible">
-                      <p>Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.
-                      </p>
+                  <div class="reviews__hover__block">
+                  <div class="reviews__text__name"  id="reviews__name"> Алиса Уливанова </div>
+                  <div class="paragraph paragraph--white paragraph--invisible" id="reviews__text">
+                      Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть...
+                         Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.
+                      
                     </div>
                     <div class="reviews__btn">
                         <button  type="button" class="order__button order__button--reviews"> Подробнее  </button>  
@@ -528,13 +571,27 @@
               </div>
 
               <div class="reviews__photo__block" style="background-image:url('./img/reviews/four.png')">
-                  <div class="reviews__hover__block">
-                  <div class="reviews__text__name">
-                      <h5 class="title reviews__title"> Константин Спилберг</h5>
+                <div class="overlay">
+                    <div class="overlay__wrap">
+                      <div class="overlay__scoreboard">
+                          <div class="overlay__text">
+                              <!-- <span class="overlay__name">  </span>
+                              <p class="overlay__comments"></p> -->
+                            </div>
+                        <div class="overlay__button">
+                        <div class="overlay__close"> </div>
+                      </div>
+                      </div>
+                    </div>
                   </div>
-                  <div class="paragraph paragraph--white paragraph--invisible">
-                      <p >Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.
-                      </p>
+                  <div class="reviews__hover__block">
+                  <div class="reviews__text__name"  id="reviews__name">
+                     Макс Корнев
+                  </div>
+                  <div class="paragraph paragraph--white paragraph--invisible" id="reviews__text">
+                    Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... 
+                        Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.
+                    
                     </div>  
                     <div class="reviews__btn">
                         <button  type="button" class="order__button order__button--reviews"> Подробнее  </button>  
@@ -543,13 +600,27 @@
               </div>
 
               <div class="reviews__photo__block" style="background-image:url('./img/reviews/five.png')">
-                  <div class="reviews__hover__block">
-                  <div class="reviews__text__name">
-                      <h5 class="title reviews__title"> Константин Спилберг</h5>
+                <div class="overlay">
+                    <div class="overlay__wrap">
+                      <div class="overlay__scoreboard">
+                          <div class="overlay__text">
+                              <!-- <span class="overlay__name">  </span>
+                              <p class="overlay__comments"></p> -->
+                            </div>
+                        <div class="overlay__button">
+                        <div class="overlay__close"> </div>
+                      </div>
+                      </div>
+                    </div>
                   </div>
-                  <div class="paragraph paragraph--white paragraph--invisible">
-                      <p>Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.
-                      </p>
+                  <div class="reviews__hover__block">
+                  <div class="reviews__text__name"  id="reviews__name">
+                     Дмитрий Васильев
+                  </div>
+                  <div class="paragraph paragraph--white paragraph--invisible" id="reviews__text">
+                      Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть...
+                         Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.
+                      
                     </div>
                     <div class="reviews__btn">
                         <button  type="button" class="order__button order__button--reviews"> Подробнее  </button>  
@@ -558,13 +629,27 @@
               </div>
 
               <div class="reviews__photo__block" style="background-image:url('./img/reviews/six.png')">
-                  <div class="reviews__hover__block">
-                  <div class="reviews__text__name">
-                      <h5 class="title reviews__title"> Константин Спилберг</h5>
+                <div class="overlay">
+                    <div class="overlay__wrap">
+                      <div class="overlay__scoreboard">
+                          <div class="overlay__text">
+                              <!-- <span class="overlay__name">  </span>
+                              <p class="overlay__comments"></p> -->
+                            </div>
+                        <div class="overlay__button">
+                        <div class="overlay__close"> </div>
+                      </div>
+                      </div>
+                    </div>
                   </div>
-                  <div class="paragraph paragraph--white paragraph--invisible">
-                      <p>Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.
-                      </p>
+                  <div class="reviews__hover__block">
+                  <div class="reviews__text__name"  id="reviews__name">
+                    Александра Доценко
+                  </div>
+                  <div class="paragraph paragraph--white paragraph--invisible" id="reviews__text">
+                      Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть...
+                         Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.
+                      
                     </div>
                     <div class="reviews__btn">
                         <button  type="button" class="order__button order__button--reviews"> Подробнее  </button>  
@@ -573,13 +658,27 @@
               </div>
 
               <div class="reviews__photo__block" style="background-image:url('./img/reviews/seven.png')">
-                  <div class="reviews__hover__block">
-                  <div class="reviews__text__name">
-                      <h5 class="title reviews__title"> Константин Спилберг</h5>
+                <div class="overlay">
+                    <div class="overlay__wrap">
+                      <div class="overlay__scoreboard">
+                          <div class="overlay__text">
+                              <!-- <span class="overlay__name">  </span>
+                              <p class="overlay__comments"></p> -->
+                            </div>
+                        <div class="overlay__button">
+                        <div class="overlay__close"> </div>
+                      </div>
+                      </div>
+                    </div>
                   </div>
-                  <div class="paragraph paragraph--white paragraph--invisible">
-                      <p>Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.
-                      </p>
+                  <div class="reviews__hover__block">
+                  <div class="reviews__text__name" id="reviews__name">
+                      Илья Кленин
+                  </div>
+                  <div class="paragraph paragraph--white paragraph--invisible" id="reviews__text">
+                      Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть...
+                         Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.
+                      
                     </div>
                     <div class="reviews__btn">
                   <button  type="button" class="order__button order__button--reviews"> Подробнее  </button>  
@@ -588,13 +687,27 @@
               </div>
 
               <div class="reviews__photo__block" style="background-image:url('./img/reviews/eight.png')">
-                  <div class="reviews__hover__block">
-                  <div class="reviews__text__name">
-                      <h5 class="title reviews__title"> Константин Спилберг</h5>
+                <div class="overlay">
+                    <div class="overlay__wrap">
+                      <div class="overlay__scoreboard">
+                        <div class="overlay__text">
+                        <!-- <span class="overlay__name">  </span>
+                        <p class="overlay__comments"></p> -->
+                      </div>
+                        <div class="overlay__button">
+                        <div class="overlay__close"> </div>
+                      </div>
+                      </div>
+                    </div>
                   </div>
-                  <div class="paragraph paragraph--white paragraph--invisible">
-                      <p>Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.
-                      </p>
+                  <div class="reviews__hover__block">
+                  <div class="reviews__text__name"  id="reviews__name">
+                      Анатолий Котов
+                  </div>
+                  <div class="paragraph paragraph--white paragraph--invisible"  id="reviews__text">
+                      Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть...
+                         Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.
+                      
                     </div>
                     <div class="reviews__btn">
                         <button  type="button" class="order__button order__button--reviews"> Подробнее  </button>  
@@ -602,25 +715,32 @@
                 </div>
               </div>
             </div>
-            </section>
 
+          
+            </section>
+            <a name="delivery__page"></a>
             <section class="delivery__page">
               <div class="container">
                   <div class="title title--form">Закажите доставку</div>
                     <div class="form">
-                      <form action="" class="delivery__form">
+                      <form method="POST" action="" class="delivery__form" id="form">
                         <div class="form__content">
                           <div class="form__user">
                               <div class="form__row">
+
                                 <label class="form__block">
                                   <div class="form__block--title"><span>Имя</span></div>
-                                  <input type="text" class="form-input">
+                                  <input type="text" class="form-input" id="name"  required>
+                                  <div class="error"></div>
                                 </label>
+
                                 <label class="form__block">
-                                    <div class="form__block--title"><span>Фамилия</span></div>
-                                    <input type="text" class="form-input">
+                                    <div class="form__block--title"><span>Телефон</span></div>
+                                    <input type="tel" class="form-input" id = "phone" required>
+                                    <div class="error"></div>
                                 </label>
                               </div>
+
                               <div class="form__row">
                                   <label class="form__block">
                                     <div class="form__block--title"><span>Улица</span></div>
@@ -629,9 +749,17 @@
                               </div>
                               <div class="form__row">
                                   <label class="form__block">
+                                    <div class="form__block--title"><span>Почта</span></div>
+                                    <input type="email" class="form-input">
+                                  </label>
+                              </div>
+
+                              <div class="form__row">
+                                  <label class="form__block">
                                     <div class="form__block--title"><span>Дом</span></div>
                                     <input type="text" class="form-input">
                                   </label>
+
                                   <label class="form__block">
                                       <div class="form__block--title"><span>Корпус</span></div>
                                       <input type="text" class="form-input">
@@ -652,7 +780,8 @@
                                 <div class="form__row form__row--comments">
                                     <label class="form__block form__block--comments">
                                       <div class="form__block--title"><span>Комментарий</span></div>
-                                      <input type="text" class="form-input form-input--comments">
+                                      <input type="text" class="form-input form-input--comments" id="comments" required>
+                                      <div class="error"></div>
                                     </label>
                                     <div class="form__buttons">
                                       <div class="form__buttons--rdb">
@@ -677,12 +806,18 @@
                                 </div>
                                </div>
                                <div class="buttons">
-                               <button type="button"class="order__button" >  Заказать </button>   
+                               <button type="submit"class="order__button" id = "send">  Заказать </button>   
                                <button type="reset"class="order__button clear__button" >  Очистить </button>   
                                </div>
                             </div>
                         </div>
                       </form>
+                      <div class="modal__window">
+                          <div class="modal__text"></div>
+                          <div class="modal__button">
+                              <div class="modal__close"> </div>
+                            </div>
+                      </div>
                     </div>
               </div>
             

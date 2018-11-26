@@ -11,6 +11,8 @@ background-size: cover;
 .logo{
   height:4.6rem ;
   width: 5.6rem;
+  position: relative;
+  z-index: 10;
 }
   .wrapper__welcome__page{
   // 
@@ -161,16 +163,36 @@ background-size: cover;
 
 
    .arrow__scroll{
-     text-align: center;
+    //  text-align: center;
      padding-top: 3rem;
+     top:50%;
+     position: absolute;
    }
    .scroll{
+     cursor: pointer;
+     position: absolute;
      max-width: 2rem ;
      max-height: 2rem;
+     z-index: 10;
    }
    .scroll--slider--left{
     transform: rotate(90deg);
+    @include tablets{
+      left:5rem;
+    }
+
+    @include phones{
+      left:15%;
+   }
    }
    .scroll--slider--right{
     transform: rotate(-90deg);
+    margin-top: 1.9rem;
+    @include tablets{
+      right:5rem;
+    }
+
+    @include phones{
+      right:4rem;
+   }
    }

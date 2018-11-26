@@ -5,6 +5,7 @@
 }
 .paragraph--white{
   color:#fff;
+  font-size: 14px;
   font-weight:normal;
 
   
@@ -16,7 +17,9 @@
 }
 }
 
-.reviews__title{
+.reviews__text__name
+{
+  font-family: 'Gagalin-Regular';
   font-size: 14px;
   color:#fff; 
   @include tablets{
@@ -36,7 +39,8 @@
   right: 0;
   bottom: 0;
   background: rgba(#000, .5);
-  opacity: 0;
+  // opacity: 0;
+  display: none;
   transform: scale(.8);
   
     
@@ -65,7 +69,7 @@ position: relative;
 }
 &:hover{
   .reviews__hover__block{
-    opacity: 1;
+   display: block;
     transform: scale(1);
   }
  }
@@ -93,9 +97,3 @@ position: relative;
 //   }
 //   }
   
- 
-
-
-.reviews__button{
-  // display: none;
-}
