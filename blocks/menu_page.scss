@@ -1,0 +1,81 @@
+.menu__page{
+  position: relative;
+  background-image: url("../img/menu/background.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.title--menu{
+  color: #fff;
+  padding-left: 0;
+ padding-top: 2rem;
+}
+.menu__list__title{
+  font-family: 'Gagalin-Regular';
+  position: relative;
+  width: 4rem;
+  line-height: 1.714;
+  color: #fff;
+  cursor: pointer;
+  text-transform: uppercase;
+  & span{
+    white-space: nowrap;
+    position: absolute;  
+    font-size: 40px;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    transform: rotate(-90deg);
+    transform-origin: 0 0;
+  }
+
+}
+
+.menu__page__list {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  overflow: hidden;
+}
+.menu__list__content {
+  font-size: 14px;
+  max-width: 0px;
+  background: rgba(#2d3032, .7);
+  opacity: 0;
+  transition: .2s;
+  overflow: hidden;
+}
+.menu__list__item {
+  display: flex;
+  
+  }
+  .menu__item--active {
+    z-index: 10;
+  & .menu__list__title{
+      color: #f9b43b;
+    }
+
+  & .menu__list__content {
+    max-width: 33.7rem;
+    padding: 62px 35px;
+    font-family: 'Ubuntu-Light';
+    font-size: 14px;
+    color: #949292;
+    font-weight: 300;
+    opacity: 0.7;
+    line-height: 1.5;
+    text-align: center;
+    visibility: visible;
+    opacity: 1;
+    @include phones {
+      padding:2rem 0 ;
+     }
+   
+  }
+  }
+   
