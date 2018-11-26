@@ -177,22 +177,18 @@ background-size: cover;
    }
    .scroll--slider--left{
     transform: rotate(90deg);
-    @include tablets{
-      left:5rem;
-    }
+    left: 15%;
 
-    @include phones{
-      left:15%;
-   }
    }
    .scroll--slider--right{
     transform: rotate(-90deg);
     margin-top: 1.9rem;
-    @include tablets{
-      right:5rem;
-    }
+    right: 15%;
+  //   @include tablets{
+  //     right:15%;
+  //   }
 
-    @include phones{
-      right:4rem;
-   }
+  //   @include phones{
+  //     right:4rem;
+  //  }
    }
