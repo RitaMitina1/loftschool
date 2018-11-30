@@ -13,7 +13,7 @@ $().ready(function(){
  const overlayComments = document.createElement('div');
  overlayComments.className = "overlay__comments";
 
-console.log(btn.length);
+
 
 for (let i = 0; i < btn.length; i++) {
         const element = btn[i];

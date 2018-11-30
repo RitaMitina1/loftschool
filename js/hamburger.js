@@ -9,7 +9,8 @@ $().ready(function(){
           'visibility': 'visible',
           'display': 'flex',
           'justify-content': 'center',
-          'align-items': 'center'
+          'align-items': 'center',
+          'margin-left': '0px'
         });
     }
 	});

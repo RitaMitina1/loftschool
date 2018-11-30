@@ -11,18 +11,20 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #fff;
+    background-color: #D3D3D3;
+    opacity: .97;
     border-radius: 10px;
     
 }
-  // .overlay__scoreboard{
-  //   position: relative;
-  //     width: 100%;
-  //     background-color: #ffffff;
-  //     border-radius: 5px;
-  //     height: 100%;
-  //     // padding: 1.875rem 1.25rem;
-  // }
+  .overlay__scoreboard{
+    position: relative;
+      width: 50%;
+      background-color: #ffffff;
+      border-radius: 5px;
+      height: 50%;
+      padding: 1.875rem 1.25rem;
+      opacity: 1;
+  }
 .overlay__name{
   font-family: 'Gagalin-Regular';
     // line-height: 1.75rem;
@@ -30,6 +32,7 @@
 .overlay__text{
   font-family: 'Ubuntu-Light';
     line-height: 1.4rem;
+    margin-top:10%;
     text-align: center;
   
     @include phones {

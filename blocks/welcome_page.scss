@@ -56,6 +56,9 @@ background-size: cover;
     margin:  0  1rem;
     a{
       color:#fff;
+      &:hover{
+       color: #e45028;
+      }
     }
     &:first-child {
       list-style-type: none;
