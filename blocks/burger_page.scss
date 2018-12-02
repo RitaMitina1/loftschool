@@ -64,7 +64,7 @@
 
 .burger__block{
   display: flex;
-    
+  margin-top: 2.5rem;
 @include tablets{
   flex-direction: column;
 }
@@ -92,6 +92,9 @@
   height: 19.68rem;
   @include phones{
     height: 18rem;
+  }
+  @include tablets{
+  height: 17rem;
   }
 }
 
@@ -253,8 +256,10 @@
   color: #fad39d;
   text-align: center;
 }
-// .order__button--burger__page{
-//   position: absolute;
+.order__button--burger__page{
+ &:hover{
+ background-color:#e33110;
+ }
   
 
-// }
+}

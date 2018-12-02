@@ -102,7 +102,9 @@
 }
 .form__block--title{
   margin-bottom: .3rem;
+
 }
+
 .form__block--button{
   display: inline-flex;
   margin: 1rem 1rem 1rem 0;
@@ -174,11 +176,13 @@
 
 .clear__button{
   background: none;
-  border: 0;
-  padding: 0;
+
   padding-left: 1rem;
   color: #FFF;
   cursor: pointer;
+  &:hover{
+    background-color: #e35028;
+  }
 }
 
 .modal__window{

@@ -65,7 +65,7 @@ function init()
         {
           
       iconLayout: 'default#image',
-      iconImageHref: 'img/contacts/map-marker.png',
+      iconImageHref: 'svg/map-marker.svg',
       iconImageSize: [46, 57],
       iconImageOffset: [-19, -47],
         }
