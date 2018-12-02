@@ -4,10 +4,8 @@ $phones:  480px;
 $tablets: 768px;
 @import "../fonts/fonts.css";
 @import "normalize.css";
-
+@import "fullpage.css";
 @import "media.scss";
-
-
 
 @import "layout.scss";
 @import "overlay.scss";
@@ -21,6 +19,7 @@ $tablets: 768px;
 @import "team_page.scss";
 @import "svg.scss";
 @import "menu_page.scss";
+@import "player_page.scss";
 @import "delivery_page.scss";
 @import "map_page.scss";
 @import "footer.scss";

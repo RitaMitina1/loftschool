@@ -1,0 +1,40 @@
+.player__page{
+  position: relative;
+  background-image: url("/img/play/background.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+#player{
+width: 41.25rem;
+height:25.31rem;
+}
+.player__container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.play--video{
+  position: absolute;
+  display: flex;
+  top: 50%;
+  left: 45%;
+  cursor: pointer;
+}
+.player__tools{
+  position: absolute;
+  height: 30px;
+  width: 41.25rem;
+  background-color: #3e3e3e;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1rem;
+  align-items: center;
+  bottom: 7rem;
+  & img{
+    cursor: pointer;
+  }
+}
