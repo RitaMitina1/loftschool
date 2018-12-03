@@ -1,6 +1,6 @@
 $().ready(function(){
 
-  $('#hamburger').on('click', function(){
+  $('.hamburger').on('click', function(){
 		$('#hamburger__active').slideToggle(function(){
 			
 			if(	$('#hamburger__active').css('visibility') == 'hidden'){

@@ -4,12 +4,12 @@ $phones:  480px;
 $tablets: 768px;
 @import "../fonts/fonts.css";
 @import "normalize.css";
-@import "fullpage.css";
 @import "media.scss";
 
 @import "layout.scss";
 @import "overlay.scss";
 
+@import "fullpage.scss";
 @import "welcome_page.scss";
 @import "hamburger.scss";
 @import "we_page.scss";
