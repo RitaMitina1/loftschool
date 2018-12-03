@@ -39,12 +39,12 @@ html.fp-enabled,
     transition: all 0.3s ease-out;
 }
 .fp-section.fp-table, .fp-slide.fp-table {
-    display: table;
+    display: flex;
     table-layout:fixed;
     width: 100%;
 }
 .fp-tableCell {
-    /* display: table-cell; */
+    display: table-cell;
     vertical-align: middle;
     width: 100%;
     height: 100%;
@@ -253,4 +253,9 @@ html.fp-enabled,
     clip: rect(0, 0, 0, 0);
     white-space: nowrap;
     border: 0;
+}
+.fp-responsive .fp-section,
+.fp-responsive .fp-slide,
+.fp-responsive .fp-tableCell{
+    height: auto !important;
 }
