@@ -104,7 +104,8 @@ html.fp-enabled,
     -webkit-transform: translate3d(0,0,0);
 }
 #fp-nav.fp-right {
-    right: 150px;
+    right: 170px;
+    margin-top: 0;
 }
 #fp-nav.fp-left {
     left: 17px;
@@ -170,8 +171,8 @@ html.fp-enabled,
     border: 1px solid white;
     display: block;
     position: absolute;
-    height: 11px;
-    width: 11px;
+    height: 12px;
+    width: 12px;
     border-radius: 100px;
      transform: translate(-30%,-30%);
     // margin:  3px 7px;
@@ -202,7 +203,7 @@ html.fp-enabled,
      height: 12px;
      width: 12px;
      border-radius: 100px;
-     transform: translate(-35%,-20%);
+     transform: translate(-30%,-30%);
 }
 #fp-nav ul li .fp-tooltip {
     position: absolute;
