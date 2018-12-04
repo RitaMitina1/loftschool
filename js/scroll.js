@@ -6,6 +6,7 @@ jQuery(document).ready(function($){
     loopTop: true,
     loopBottom:true,
     navigation:true,
+    // scrollOverflow:true
 
   });
 
