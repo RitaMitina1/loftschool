@@ -1,0 +1,103 @@
+.footer{
+  position: absolute;
+  z-index: 10000;
+  background-image: url("../img/contacts/footer.png");
+  bottom: 0;
+}
+.footer__container{
+  display: flex;
+  // width: 50%;
+}
+
+.contacts{
+  //  width: 50%;
+  display: block;
+
+}
+
+.footer__content{
+  width: 100%;
+  display: flex;
+  @include phones{
+    flex-direction: column;
+    // justify-content: center;
+    }
+}
+.contacts__left{
+ width: 50%;
+ margin: .5rem 0;
+ 
+ @include phones{
+  width: 100%;
+ text-align: center;
+}
+
+.contacts__adress{
+  font-family: 'Ubuntu-Light';
+  color: #fff;
+  font-size: 14px;
+  margin-bottom: .5rem;
+}
+}
+.contacts__right{
+  width: 50%;
+  padding-top: 1.5rem;
+  @include phones{
+   width: 100%;
+   display: flex;
+    justify-content: center;
+    // justify-content: center;
+    }
+ }
+.phone-icon{
+  width: .7rem;
+height: 1rem;
+margin-right: 0.5rem;
+
+}
+.contacts__phone{
+  display: flex;
+  @include phones{
+   justify-content: center;
+  }
+  
+  & a{
+  font-family: 'Ubuntu-Bold';
+  color: #d64c26;
+  }
+}
+.social{
+
+display: flex;
+justify-content: flex-end;
+}
+
+
+.social__icon {
+  margin-left: 1.25rem;
+  max-width: 1.4375rem;
+  max-height: 0.8125rem;
+ fill: #5a5a5a;
+  // opacity: 0.3;
+ 
+}
+
+.social_link{
+   & :hover{
+    fill: #fff;
+  }
+}
+.social__item{
+list-style: none;
+}
+// .social__icon{
+//   width: 100px;
+//   width: 100px;
+// }
+  //   $icon: (vk,fb,inst,twitter);
+// @each $image in $icon {
+//   .footer__social--#{$image} {
+//     background: url("../svg/#{$image}.svg");
+//     border: 1px solid red;
+//   }
+//   }

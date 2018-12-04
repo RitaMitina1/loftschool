@@ -1,0 +1,237 @@
+.delivery__page{
+  position: relative;
+  background-image: url("../img/form/background.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.title--form{
+  padding-top: 8.4rem;
+  margin-bottom: 3rem;
+  max-width: 100%;
+  text-align: center;
+@include phones{
+  padding-top: 3rem;
+      }
+  @include tablets{
+    padding-top: 1rem;
+    }
+
+    
+
+}
+.form__content{
+  display: flex;
+  @include tablets{
+  flex-direction: column;
+  width: 80%;
+  margin-left: 5%;
+  align-content: center;
+  font-family: 'Ubuntu-Light';
+
+  }
+  @include phones{
+    flex-direction: column;
+  }
+}
+.form__block--title {
+  color: #fff;
+}
+.form__row{
+  display: flex;
+  margin-bottom: 1.2rem;
+  &.form__row--comments{
+  flex-direction: column;
+}
+   
+}
+
+.form-input {
+  border: none;
+  padding: 5px;
+  width: 100%;
+  border-radius: 4px;
+  background: #fff;
+  
+}
+.form__user {
+  width: 50%;
+  margin-right: 1.2rem;
+  @include tablets{
+    width: 100%;
+    }
+    @include phones{
+    width: 100%;
+    }
+}
+
+.form__block {
+  flex: 1;
+  margin-right: 1.25rem;
+  font-family: 'Ubuntu-Light';
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  @include tablets{
+    width: 100%;
+    margin-right: 3rem;
+    }
+    @include phones{
+    width: 100%;
+    
+    }
+}
+
+.form__comments{
+  display: flex;
+ flex-direction: column;  
+ width: 55%;
+ @include tablets{
+  width: 100%;
+  }
+  @include phones{
+  width: 100%;
+  }
+}
+
+.form-input--comments{
+  height: 6rem;
+}
+.form__block--title{
+  margin-bottom: .3rem;
+
+}
+
+.form__block--button{
+  display: inline-flex;
+  margin: 1rem 1rem 1rem 0;
+  & .form-rdb{
+    display: none;
+  }
+  & .form-chb{
+    display: none;
+  }
+}
+.form__buttons--rdb{
+  display: flex;
+  // float: left;
+}
+.form-rdb:checked + .form__rdb--visible:after{
+  opacity: 1;
+    }
+.form__rdb--visible{
+  cursor: pointer;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: 1px solid #d7d7d7;
+  background-image: linear-gradient(to top, #ededed,#fdfdfd );
+  position: relative;
+  margin-right:10px; 
+}
+
+.form__rdb--visible:after{
+  content:"";
+  display: block;
+  position: absolute;
+  height: 7px;
+  width: 7px;
+  border-radius: 50%;
+  background: #e35028;
+  left: 50%;
+  top:50%;
+  transform: translate(-55%, -55%);
+  opacity: 0;
+  }
+
+  .form__chb--visible{
+    width: 15px;
+    height: 15px;
+    border: 1px solid #d7d7d7;
+  background-image: linear-gradient(to top, #ededed,#fdfdfd );
+  position: relative;
+  margin-right:10px; 
+  cursor: pointer;
+  }
+  .form-chb:checked + .form__chb--visible:after{
+    opacity: 1;
+    
+  }
+  .form__chb--visible:after{
+    content: "";
+    display: block;
+    position: absolute;
+    height: 6px;
+    width: 9px;
+    color: #e35028;
+    border-left: 2px solid;
+    border-bottom: 2px solid;
+    transform: rotate(-45deg);
+  opacity: 0;
+
+  }
+
+.clear__button{
+  background: none;
+
+  padding-left: 1rem;
+  color: #FFF;
+  cursor: pointer;
+  &:hover{
+    background-color: #e35028;
+  }
+}
+
+.modal__window{
+  position: absolute;
+  display: none;
+  width: 50%;
+  height: 15rem;
+  background-color: #d7d7d7;
+  top:25%;
+  left: 25%;
+  // right: 0;
+  // bottom: 0;
+  // margin: 0;
+  // padding: 0;
+
+}
+.modal__button{
+  position: absolute;
+  transform: rotate(-132deg);
+  cursor: pointer;
+  right: 1rem;
+  top: 0.2rem;
+}
+.modal__close{
+  position: relative;
+  width: 5px;
+  height: 20px;
+  background: red;
+  border-radius: 2px;
+}
+
+.modal__close:after{
+  content: "";
+  position: absolute;
+  display: block;
+  top: 50%;
+  left: 50%;
+  width: 20px;
+  height: 5px;
+  background: red;
+  border-radius: 2px;
+  transform: translate(-50%, -50%);
+
+}
+.modal__button{
+  position: absolute;
+}
+
+.modal__text{
+  font-family: 'Ubuntu-Light';
+  font-size: 50px;
+}
