@@ -1,0 +1,29 @@
+
+
+$phones:  480px;
+$tablets: 768px;
+$mini: 350px;
+@import "../fonts/fonts.css";
+@import "normalize.css";
+@import "media.scss";
+
+@import "layout.scss";
+@import "overlay.scss";
+
+@import "fullpage.scss";
+@import "welcome_page.scss";
+@import "hamburger.scss";
+@import "we_page.scss";
+@import "reviews_page.scss";
+@import "pagination.scss";
+@import "burger_page.scss";
+@import "team_page.scss";
+@import "svg.scss";
+@import "menu_page.scss";
+@import "player_page.scss";
+@import "delivery_page.scss";
+@import "map_page.scss";
+@import "footer.scss";
+
+
+

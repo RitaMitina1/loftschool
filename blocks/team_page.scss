@@ -1,0 +1,129 @@
+
+
+.team__page{
+  position: relative;
+  background-image: url(../img/team/main_pic.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.team__block{
+  position: absolute;
+  width: 50%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(#2d3032, .9);
+  @include tablets {
+    width: 100%;
+   }
+ 
+   @include phones{
+    width: 100%;
+   }
+
+}
+.wrapper__team__block{
+  margin:4rem 6rem auto 6rem ;
+  @include tablets {
+    text-align: center;
+  }
+
+  @include phones{
+  //  margin: 4rem;
+   text-align: center;
+  }
+}
+
+.photo{
+  border-radius: 50%;
+  padding: .8rem 1.2rem;
+}
+ .team__info{
+    display: flex;
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+    font-family: 'Ubuntu-Light';
+    & span{
+      font-family: 'Ubuntu-Bold';
+    }
+
+    @include tablets {
+      display: flex;
+      flex-direction: column;
+     }
+
+     
+     @include phones {
+      display: flex;
+      flex-direction: column;
+      }
+  }
+  .team__position{
+    margin-top: 1rem;
+  }
+.team__item{
+  position: relative;
+  margin-top: 35px;
+  list-style: none;
+  color:#fff; 
+   @include tablets {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            }
+
+            
+            @include phones {
+              display: flex;
+              flex-direction: column;
+            }
+    
+      & .team__item__title{
+        font-family: 'Gagalin-Regular';
+        font-size: 14px;
+        display: inline-flex;
+        cursor: pointer;
+ 
+            &:before{
+                  content: "";
+                  // position: absolute; 
+                  // top: 2px;
+                  // left: -1rem;
+                  height: 0;
+                  width: 0;
+      border: 5px solid transparent;
+      border-top: 5px solid #f9b43b; 
+              }
+              @include tablets {
+                font-size: 25px;
+                }
+    
+                
+                @include phones {
+                  font-size: 23px;
+                }
+       
+       }
+  
+          
+    }
+    .team__item--active{
+          
+            .team__item__title{
+              color: #f9b43b;
+               &:before{
+              transform: rotate(-180deg);
+              // top:0;
+              }
+            }
+            & .team__info{
+              height: 100%;
+              visibility: visible;
+              opacity: 1;
+              overflow: hidden;
+            }
+        }
+
+ 

@@ -1,0 +1,27 @@
+.pagination{
+    position: fixed;
+    top:75px;
+    right: 150px;
+    z-index: 100;
+    color:white;
+
+    @include tablets {
+      display: none;
+    }
+
+    @include phones{
+      display: none;
+    }
+  }
+  
+  .pagination__item:hover:before{
+    content:"";
+    display: block;
+    position: absolute;
+    border: 1px solid white;
+    height: 11px;
+    width: 11px;
+    border-radius: 100px;
+    transform: translate(-155%,-115%);
+    cursor: pointer;
+    }

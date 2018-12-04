@@ -1,0 +1,264 @@
+.dark__burger__page{
+  position: relative;
+  background: linear-gradient(to top, #f9b43b 20%, #ec8f38 50%, #f9b43b 80%);
+}
+.container--burger__page{
+  display: flex;
+  flex-direction: row;
+  // align-items: center;
+  @include tablets{
+    // width: 80%;/
+  }
+  @include phones{
+
+    // width: 80%;
+  }
+ 
+
+}
+
+.content{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.consist{
+  position: absolute;
+  background: #f08c33;
+  border-radius:5px;
+  width: 5.6rem; 
+  height: 5.6rem;
+  z-index: 100;
+  text-align: center;
+  &:hover{
+    background: #e35028;
+    cursor: pointer;
+  }
+}
+
+.title--consist{
+  color:white;
+  font-size: 14px;
+  text-align: center;
+}
+
+.burder__slider{
+    display: flex;
+    @include tablets{
+      // margin-top: 2rem;
+      margin: 0 auto;
+    }
+    @include phones{
+      margin: 0 auto;
+
+     margin-top: 2rem;
+    }
+}
+.item__burger{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  // Добавить ширину
+}
+
+.burger__block{
+  display: flex;
+  // margin-top: 2.5rem;
+@include tablets{
+  flex-direction: column;
+}
+@include phones{
+  flex-direction: column;
+ 
+}
+}
+.burger__left{
+  width: 50%;
+  @include tablets{
+    width: 57%;
+
+    display: -webkit-box;
+    margin: 0 auto;
+  }
+  @include phones{
+    width: 90%;
+    display: -webkit-box;
+  }
+}
+
+.burgers__img{
+  width: 28rem;
+  height: 19.68rem;
+  @include phones{
+    height: 18rem;
+  }
+  @include tablets{
+  height: 17rem;
+  }
+}
+
+.burger__right{
+  width: 50%;
+  margin-top: 2rem;
+  @include tablets{
+    width: 100%;
+    text-align: center;
+  }
+  @include phones{
+    width: 100%;
+    text-align: center;
+    margin-top: 0;
+  }
+}
+
+.burger__image{
+  margin-top: 6rem;
+}
+.burgers__img{
+  position: relative;
+  max-width: 100%;
+
+    max-height: 100%;
+}
+
+.burger__title{
+  padding-bottom: 2rem;
+  font-size: 72px;
+     font-family: 'Gagalin-Regular';
+     color: #fff; 
+     @include tablets{
+      font-size: 55px;
+        }
+        @include phones{
+          font-size: 55px;
+          padding-bottom: .5rem;
+            }
+}
+
+.burger__desc{
+  font-family: 'Ubuntu-Light';
+  font-size: 16px;
+  color:#FFF;
+  font-weight: 300;
+  // font-weight:700;
+  line-height:1.5;
+}
+.burger__order{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.title--cost{
+  color:#e35028;
+  margin-right: 30px;
+  & span{
+    font-size: 30px;
+  }
+
+  @include tablets{
+ white-space: nowrap;
+  }
+  @include phones{
+    white-space: nowrap;
+  }
+}
+
+.consist:hover .consist__dropdown__menu{
+    opacity: 1;
+    left: 0;
+}
+.consist__dropdown__menu{
+  position: absolute;
+  // display: flex;
+  // background: #fff;
+  border: 1px;
+  border-radius: 5px;
+  width: 17.4rem;
+  margin-left: 5.6rem;
+  margin-top: -4rem;
+  // top:100%;
+  left: -100000px;
+  // display: none;
+  opacity: 0;
+  transition: opacity .3s;
+  background: rgba(255, 255, 255, .8);
+
+  @include tablets{
+    margin-top: -5rem;
+     }
+     @include phones{
+      margin-top: -5rem;
+     }
+  }
+
+
+.dropdown__list{
+  list-style-type: none;
+  width: 100%;
+ 
+}
+
+.dropdown__line{
+  display: flex;
+  margin-left: 1rem;
+
+
+}
+.dropdown__text{
+  margin-top: 1.2rem;
+  margin-left: 1.2rem;
+  padding-right: 1rem;
+  width: 100%;
+
+
+  & .dropdown__name{
+    float: left;
+    font-family: 'Ubuntu-Medium';
+  }
+  & .dropdown__weight{
+    float: right;
+  font-family: 'Ubuntu-Light';
+
+  }
+
+
+  
+}
+.dropdown__icons{
+  max-height: 45px;
+  max-width: 45px ;
+  margin-top: .3rem;
+
+}
+
+.burger__weight{
+  position: absolute;
+  @include tablets{
+   margin-left: -3rem;
+  }
+
+}
+
+
+.weight__icons{
+  width: 65px;
+  height: 65px;
+  // position: absolute;
+}
+.weight__text{
+  font-size: 16px;
+  font-family: 'Gagalin-Regular';
+  fill: #fad39d;
+  color: #fad39d;
+  text-align: center;
+}
+.order__button--burger__page{
+ &:hover{
+ background-color:#e33110;
+ }
+  
+
+}
