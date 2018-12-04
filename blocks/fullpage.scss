@@ -98,18 +98,14 @@ html.fp-enabled,
 #fp-nav {
     position: fixed;
     z-index: 100;
-    /* margin-top: -32px; */
     top: 20%;
     opacity: 1;
-    -webkit-transform: translate3d(0,0,0);
+    // -webkit-transform: translate3d(0,0,0);
 }
-#fp-nav.fp-right {
-    right: 170px;
-    margin-top: 0;
-}
-#fp-nav.fp-left {
-    left: 17px;
-}
+
+// #fp-nav.fp-left {
+//     left: 17px;
+// }
 .fp-slidesNav{
     position: absolute;
     z-index: 4;
@@ -132,6 +128,7 @@ html.fp-enabled,
   margin: 0;
   padding: 0;
 
+  margin-top: 120px;
   @include tablets {
     display: none;
       }
@@ -259,4 +256,9 @@ html.fp-enabled,
 .fp-responsive .fp-slide,
 .fp-responsive .fp-tableCell{
     height: auto !important;
+}
+
+#fp-nav.fp-right {
+  right: 170px;
+  margin-top: 0;
 }

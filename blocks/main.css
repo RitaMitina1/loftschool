@@ -256,17 +256,8 @@ html.fp-enabled,
 #fp-nav {
   position: fixed;
   z-index: 100;
-  /* margin-top: -32px; */
   top: 20%;
-  opacity: 1;
-  -webkit-transform: translate3d(0, 0, 0); }
-
-#fp-nav.fp-right {
-  right: 170px;
-  margin-top: 0; }
-
-#fp-nav.fp-left {
-  left: 17px; }
+  opacity: 1; }
 
 .fp-slidesNav {
   position: absolute;
@@ -288,7 +279,8 @@ html.fp-enabled,
 #fp-nav ul,
 .fp-slidesNav ul {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  margin-top: 120px; }
   @media (max-width: 768px) {
     #fp-nav ul,
     .fp-slidesNav ul {
@@ -416,6 +408,10 @@ html.fp-enabled,
 .fp-responsive .fp-slide,
 .fp-responsive .fp-tableCell {
   height: auto !important; }
+
+#fp-nav.fp-right {
+  right: 170px;
+  margin-top: 0; }
 
 .welcome__page {
   background-image: url(../img/container/Rectangle.png);
@@ -1307,7 +1303,7 @@ html.fp-enabled,
 
 .player__page {
   position: relative;
-  background-image: url("/img/play/background.png");
+  background-image: url("../img/play/background.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover; }
