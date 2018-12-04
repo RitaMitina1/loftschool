@@ -1,6 +1,6 @@
 .player__page{
   position: relative;
-  background-image: url("/img/play/background.png");
+  background-image: url("../img/play/background.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -52,8 +52,6 @@ height:25.31rem;
   height:4px;
   outline : none;
   background:#626262;
-
-  // border:1px solid rgb(124, 73, 73);
   &::-webkit-slider-thumb{
     -webkit-appearance: none;
     width:12px;
