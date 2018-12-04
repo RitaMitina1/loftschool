@@ -18,7 +18,7 @@ $().ready(function(){
 for (let i = 0; i < btn.length; i++) {
         const element = btn[i];
 
-        element.addEventListener("click", function () {
+   element.addEventListener("click", function () {
           event.preventDefault();
 
          
@@ -27,14 +27,12 @@ for (let i = 0; i < btn.length; i++) {
         } else {
           hoverBlock.style.display="none";
         overlay.style.display="block";
-        overlay.style.height="100%";
-        overlay.style.width="100%";
+      
 
         }
         var parent = element.parentNode.children;
             for (let i = 0; i < parent.length; i++) {
                 const content = parent[i];
-                console.log(content.classList);
                 if (content.classList.contains('reviews__text__name')) {
                  var name = content.textContent;
                 };
